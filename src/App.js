@@ -1,7 +1,7 @@
 import React from 'react';
 import Calendar from './Components/Calendar.js';
 import Grateful from './Components/Grateful.js';
-// import Priorities from './Components/Priorities.js';
+import Priorities from './Components/Priorities.js';
 import './App.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
        <Calendar />
        <Grateful />
-       {/* <Priorities /> */}
+       <Priorities />
     </div>
   );
 }
