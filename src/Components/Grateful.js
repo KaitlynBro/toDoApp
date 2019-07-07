@@ -1,11 +1,28 @@
 import React from 'react';
 
 class Grateful extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {value: ''};
+    
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+    handleChange(event) {
+    this.setState({value: event.target.value});
+    }
+    handleSubmit(event) {
+    event.preventDefault();
+    }
     render() {
-        return(
+        return (
             <div>
-                <p>Today I'm Grateful For</p>
-                <input type="text" />
+                <form onSubmit={this.handleSubmit}>
+                    <label>
+                        Today I'm Grateful for
+                        <input type="text" value={this.state.value} onChange={this.handleChange} />
+                    </label>
+                </form>
             </div>
         )
     }

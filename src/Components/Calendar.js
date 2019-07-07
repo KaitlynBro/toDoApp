@@ -14,8 +14,10 @@ class Calendar extends React.Component {
   render() {
     return (
         <div>
-            <p>Today's Date</p>
+          <label>
+            Today's Date
             <button onClick={ this.handleClick }>{this.state.day}</button>
+          </label>
         </div>
     )
   }
