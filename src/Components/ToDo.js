@@ -4,7 +4,6 @@ class Todo extends React.Component {
     render() {
         return(
             <div>
-                <p>Notes</p>
                 <form>
                     <input type="text" />
                     <input type="checkbox"></input>
