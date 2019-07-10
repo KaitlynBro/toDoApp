@@ -1,12 +1,12 @@
 import React from 'react';
-import Flower from '.././assets/flower.png';
+// import Flower from '.././assets/flower.png';
 
 class Priorities extends React.Component {
     render() {
         return (
             <div>
                 <div>
-                    <img src={Flower} alt="" />
+                    {/* <img src={Flower} alt="" /> */}
                 </div>
                 <div>
                     <p>Priorities</p>

@@ -1,0 +1,25 @@
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/calendar';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Parisienne&display=swap');
+
+// general styles
+
+body {
+  max-width: 1200px;
+  margin:50px auto;
+  background-color: $white;
+  font-family: $primaryfont;
+}
+
+h2, h3 {
+  @include title;
+}
+
+input, textarea {
+  @include text;
+}
+
+input {
+  padding:5px 10px;
+}

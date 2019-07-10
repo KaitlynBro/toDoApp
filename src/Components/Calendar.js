@@ -13,7 +13,8 @@ class Calendar extends React.Component {
   }
   render() {
     return (
-        <div>
+        <div className="calendar">
+          <h1>A New Day</h1>
           <label>
             Today's Date
             <button onClick={ this.handleClick }>{this.state.day}</button>
