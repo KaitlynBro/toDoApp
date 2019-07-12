@@ -1,5 +1,5 @@
 import React from 'react';
-import Calendar from './Components/Calendar.js';
+import Header from './Components/Header.js';
 import Grateful from './Components/Grateful.js';
 import Priorities from './Components/Priorities.js';
 import ToDo from './Components/ToDo.js';
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Calendar />
+        <Header />
       </header>
       <section className="priorities">
         <Grateful />
@@ -46,3 +46,4 @@ export default App;
 // is it ok to put sections and divs within app.js component?
 // use a quote api to pull in inspirational quotes to put at top of page on load - new one each days
 // how to get just the date? i don't want the extra stuff :)
+// I want the date to show on page load, not on click.

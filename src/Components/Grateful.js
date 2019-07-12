@@ -16,10 +16,10 @@ class Grateful extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="grateful-wrapper">
                 <form onSubmit={this.handleSubmit}>
                     <label>
-                        Today I'm Grateful for
+                        <h2>Today I'm Grateful for</h2>
                         <input type="text" value={this.state.value} onChange={this.handleChange} />
                     </label>
                 </form>

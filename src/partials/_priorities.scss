@@ -1,0 +1,56 @@
+.priorities {
+    .grateful-wrapper {
+        form label {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include title;
+            h2 {
+                z-index: 0;
+                background: white;
+                padding: 0 10px;
+            }
+            input {
+                margin:10px 0;
+                max-width: 1300px;
+                width: 90%;
+                border: 3px solid pink;
+                position: relative;
+                top: -40px;
+                z-index: -1;
+                font-size: 18px;
+                text-align: center;
+                padding:20px;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .priorities-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .flower {
+            width: 50%;
+            img {
+                max-width: 400px;
+            }
+        }
+        .priorities-content {
+            width: 50%;
+                form {
+                    display: flex;
+                    align-items: flex-end;
+                    input[type="text"] {
+                    width: 90%;
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                    box-sizing: content-box;
+                    border-bottom: 1px solid $black;
+                }
+                }
+        }
+    }
+}
