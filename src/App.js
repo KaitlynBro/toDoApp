@@ -1,43 +1,43 @@
-import React from 'react';
+import React, { Component } from 'react'
 import Header from './Components/Header.js';
 import Grateful from './Components/Grateful.js';
 import Priorities from './Components/Priorities.js';
 import ToDo from './Components/ToDo.js';
 import Health from './Components/Health.js';
+
 import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header>
-        <Header />
-      </header>
-      <section className="priorities">
-        <Grateful />
-        <Priorities />
-      </section>
-      <section className="lists">
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header>
+          <Header />
+          <Grateful />
+        </header>
+        <section className="priorities">
+          <Priorities />
+        </section>
+        <section className="lists">
         <div>
           <h2>To Dos</h2>
           <ToDo />
         </div>
         <div>
-          <h2>Tomorrow</h2>
-          <ToDo />
-        </div>
-        <div>
           <h2>Notes</h2>
-          <ToDo />
+          <textarea rows="30" />
         </div>
       </section>
-      <section className="health">
-        <Health />
-      </section>
-    </div>
-  );
+        <section className="health">
+          <Health />
+        </section>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
+
 
 // TO DO
 // Figure out how to have two components repated twice without having the same words -- just want same skeleton without repeating

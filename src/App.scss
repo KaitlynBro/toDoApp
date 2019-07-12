@@ -7,10 +7,14 @@
 // general styles
 
 body {
-  max-width: 1200px;
-  margin:50px auto;
+  margin:20px;
   background-color: $white;
   font-family: $primaryfont;
+  color: $black;
+}
+
+.App {
+  border:5px solid pink;
 }
 
 h2, h3 {

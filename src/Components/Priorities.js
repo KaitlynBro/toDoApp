@@ -10,18 +10,27 @@ class Priorities extends React.Component {
                 </div>
                 <div className="priorities-content">
                     <h2>Priorities</h2>
-                    <form>
+                    <div className="priority">
                         <input type="text" />
-                        <input type="checkbox"></input>
-                    </form>
-                    <form>
+                        <div className="checkbox">
+                            <input type="checkbox" id="checkbox_1" />
+                            <label for="checkbox_1"></label>
+                        </div>
+                    </div>
+                    <div className="priority">
                         <input type="text" />
-                        <input type="checkbox"></input>
-                    </form>
-                    <form>
+                        <div className="checkbox">
+                            <input type="checkbox" id="checkbox_2" />
+                            <label for="checkbox_2"></label>
+                        </div>
+                    </div>
+                    <div className="priority">
                         <input type="text" />
-                        <input type="checkbox"></input>
-                    </form>
+                        <div className="checkbox">
+                            <input type="checkbox" id="checkbox_3" />
+                            <label for="checkbox_3"></label>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
