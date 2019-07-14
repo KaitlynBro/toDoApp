@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Header from './Components/Header.js';
 import Grateful from './Components/Grateful.js';
 import Priorities from './Components/Priorities.js';
-import ToDo from './Components/ToDo.js';
 import Health from './Components/Health.js';
 
 import './App.scss';
@@ -15,19 +14,9 @@ class App extends Component {
           <Header />
           <Grateful />
         </header>
-        <section className="priorities">
+        <section className="lists">
           <Priorities />
         </section>
-        <section className="lists">
-        <div>
-          <h2>To Dos</h2>
-          <ToDo />
-        </div>
-        <div>
-          <h2>Notes</h2>
-          <textarea rows="30" />
-        </div>
-      </section>
         <section className="health">
           <Health />
         </section>
@@ -47,3 +36,4 @@ export default App
 // use a quote api to pull in inspirational quotes to put at top of page on load - new one each days
 // how to get just the date? i don't want the extra stuff :)
 // I want the date to show on page load, not on click.
+// SAVE SVG IN OWN FILE AND IMPORT INTO NEEDED FILES
